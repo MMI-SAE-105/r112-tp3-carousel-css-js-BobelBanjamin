@@ -19,45 +19,45 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 /* Compléter la suite du code */
 .carousel__controls {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-  margin: 16px 0;
+  display: flex; /* Utilise flexbox pour aligner les éléments enfants */
+  gap: 16px; /* Espace entre les éléments enfants */
+  align-items: center; /* Aligne les éléments enfants au centre verticalement */
+  justify-content: center; /* Centre les éléments enfants horizontalement */
+  margin: 16px 0; /* Marge de 16px en haut et en bas */
 }
+
 .carousel__button {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ccc;
-  border-radius: 50%;
+  width: 50px; /* Largeur du bouton */
+  height: 50px; /* Hauteur du bouton */
+  display: flex; /* Utilise flexbox pour aligner le contenu du bouton */
+  align-items: center; /* Aligne le contenu du bouton au centre verticalement */
+  justify-content: center; /* Centre le contenu du bouton horizontalement */
+  border: 1px solid #ccc; /* Bordure solide de 1px */
+  border-radius: 50%; /* Bordure arrondie pour faire un cercle */
+  background-color: #fff; /* Fond blanc */
+  cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
 }
+
 .carousel__button--prev {
-  transform: rotate(180deg)
+  transform: rotate(180deg); /* Fait pivoter le bouton de 180 degrés */
 }
 
 .carousel__container {
-  display: flex;
-  gap: 16px;
-  overflow-x: scroll;
-  margin-left: -24px;
-  margin-right: -24px;
-  scroll-snap-type: x mandatory;
-  width: 100%;
-  padding: 16px 0;
-  box-sizing: border-box;
+  display: flex; /* Utilise flexbox pour aligner les éléments enfants */
+  gap: 16px; /* Espace entre les éléments enfants */
+  overflow-x: auto; /* Ajoute un défilement horizontal si le contenu déborde */
+  margin-left: -24px; /* Marge négative à gauche pour coller le carousel au bord de l'écran */
+  margin-right: -24px; /* Marge négative à droite pour coller le carousel au bord de l'écran */
+  scroll-snap-type: x mandatory; /* Définit le type de défilement pour accrocher les éléments */
 }
 
 .carousel__item {
-  flex: 0 0 100%;
-  scroll-snap-align: center;
+  flex: 0 0 260px; /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px */
+  scroll-snap-align: center; /* Aligne l'élément au centre lors du défilement */
 }
 
 .carousel__item img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px; 
+  display: block; /* Affiche l'image comme un bloc */
+  width: 100%; /* L'image prend toute la largeur de son conteneur */
+  height: auto; /* Maintient le ratio de l'image */
 }
