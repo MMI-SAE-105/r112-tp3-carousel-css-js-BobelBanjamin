@@ -61,3 +61,14 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   width: 100%; /* L'image prend toute la largeur de son conteneur */
   height: auto; /* Maintient le ratio de l'image */
 }
+
+.carousel__controls {
+  position: absolute; /* Positionnement absolu par rapport au carrousel */
+  bottom: 10px; /* Place les contrôles au bas du carrousel */
+  left: 0; /* Aligne les boutons à gauche */
+  right: 0; /* Aligne les boutons à droite */
+  display: flex;
+  justify-content: space-between; /* Place les boutons aux extrémités du carrousel */
+  z-index: 10; /* Met les boutons au-dessus des images */
+  padding: 0 16px;
+}
