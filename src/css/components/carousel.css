@@ -52,7 +52,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item {
-  flex: 0 0 260px; /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px */
+  flex: 0 0 1500px; /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px */
   scroll-snap-align: center; /* Aligne l'élément au centre lors du défilement */
 }
 
