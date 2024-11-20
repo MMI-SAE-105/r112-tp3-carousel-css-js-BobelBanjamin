@@ -56,5 +56,8 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .carousel__item img {
-  /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
 }
